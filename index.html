@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="main.js"></script>
+
+  <title>Completed Hikes</title>
+</head>
+
+<body>
+  <div class="bodystyle">
+
+
+    <div data-role="page" id="home">
+      <!-- header -->
+      <div data-role="header" data-theme='b'>
+        <br><img src="images/strikethrough.png"  width="102" height="102">
+        <br>
+        <h2>STRIKE HIKE</h2>
+      </div>
+
+      <!-- /navbar -->
+      <div data-role="navbar" data-theme='c'>
+        <ul>
+          <li><a class="unclickable">HOME</a>
+          </li>
+          <li><a href="#add" data-transition="fade">ADD MORE HIKES</a>
+          </li>
+          <li><a href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+      <div class="HomeContent">
+      <div data-role="content" data-theme='b'>
+        <div>
+          Strike it from your bucket list and add it to this one!
+          <br> Let your Strike Hike list grow with details about your completed hikes!
+          <br>
+        </div>
+      </div>
+      </div>
+
+      <!-- notes footer -->
+      <div class="footstyle">
+        <div data-role="footer" data-theme='a'>
+          <h3>Edwin Pacheco & Matthew Nusbaum &copy; 2023</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- //=======================================================================
+    //======================================================================= -->
+    <div data-role="page" id="add">
+      <!-- header -->
+      <div data-role="header" data-theme='b'>
+        <br><img src="images/strikethrough.png" alt="An S that has strikethrough on it." width="102" height="102">
+        <br>
+        <h2>Add Your Hikes</h2>
+      </div>
+
+
+
+      <!-- /navbar -->
+      <div data-role="navbar" data-theme='c'>
+        <ul>
+          <li><a href="#home" data-transition="fade">HOME</a>
+          </li>
+          <li><a class="unclickable" href="#add" data-transition="fade">ADD MORE HIKES</a>
+          </li>
+          <li><a href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- content -->
+      <div data-role="content" data-theme='b'>
+        <div class="formstyle">
+          Enter Trail Name
+          <br>
+          <input type="text" value="" id="trailInput">
+          <br> Location
+          <br>
+          <input type="text" value="" id="locationInput">
+          <br> Date
+          <br>
+          <input type="date" id="dateInput" value="2023-05-01"> How many miles?
+          <br>
+          <input type="text" value="" id="distanceInput">
+          <br>
+
+          <div>
+            <label for="select-TOD">Select Time of Day</label>
+            <select name="select-TOD" id="select-TOD">
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+              <option value="Night">Night</option>
+            </select>
+          </div>
+
+          <p>Additional notes:</p>          
+          <input type="text" value="" id="noteInput">
+          <button id="buttonAdd" data-inline="true">Add Your Hike</button>
+
+
+
+        </div>
+      </div>
+
+      <!-- notes footer -->
+      <div class="footstyle">
+        <div data-role="footer" data-theme='a'>
+          <h3>Edwin Pacheco & Matthew Nusbaum &copy; 2023</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- //=======================================================================
+    //======================================================================= -->
+    <div data-role="page" id="listHikes">
+
+      <!-- header -->
+      <div data-role="header" data-theme='b'>
+        <br><img src="images/strikethrough.png" alt="An S that has strikethrough on it." width="102" height="102">
+        <br>
+        <h1>Your Hike List</h1>
+      </div>
+
+
+      <!-- /navbar -->
+      <div data-role="navbar" data-theme='c'>
+        <ul>
+          <li><a href="#home" data-transition="fade">HOME</a>
+          </li>
+          <li><a href="#add" data-transition="fade">ADD MORE HIKES</a>
+          </li>
+          <li><a class="unclickable" href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme='b'>
+        <div>Here are your entries:</div><br>
+        <div class="hikelistcontainer">
+          <ul id="hikeListul" data-role="listview"></ul>
+        </div>
+      </div>
+
+      <!-- notes footer -->
+      <div class="footstyle">
+        <div data-role="footer" data-theme='a'>
+          <h3>Edwin Pacheco & Matthew Nusbaum &copy; 2023</h3>
+        </div>
+      </div>
+
+    </div>
+    <!-- ========================================================================
+    ====================================end of page==============================
+    ========================================================================= -->
+
+    <div data-role="page" id="details">
+      <h2>Details</h2>
+    </div>
+  </div>
+
+</body>
+
+</html>

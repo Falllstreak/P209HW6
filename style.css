@@ -1,0 +1,50 @@
+a:active {
+    background-color: yellow;
+  }
+.bodystyle{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    font-weight:    thin 100;
+    color: #A72A32;
+    text-align: center;
+    background-color:#282932;
+}
+.navstyle{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+.unclickable{
+    pointer-events: none;
+}
+.formstyle{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: thin 100;
+    text-align: left; 
+}
+.hikelistcontainer{
+    margin-bottom: 1%;
+}
+/* .label{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+} */
+.footstyle{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight:    thin 100;
+    color: #A72A32;
+    text-align: center;
+    background-color:#282932;
+    margin-top: 30%;
+}
+ul{
+    padding-bottom: 10%;
+}
+.alterfont {
+    color: #A72A32;
+    text-align: center;   
+}
+h1, h2, h3, h4, h5{
+    color: #A72A32;
+}
