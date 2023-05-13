@@ -18,8 +18,7 @@
 <body>
   <div class="bodystyle">
 
-    <!-- //===========================FIRST PAGE=================================
-    //================================HOME PAGE============================== -->
+
     <div data-role="page" id="home">
       <!-- header -->
       <div data-role="header" data-theme='b'>
@@ -36,6 +35,8 @@
           <li><a href="#add" data-transition="fade">ADD MORE HIKES</a>
           </li>
           <li><a href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+          </li>
+          <li><a href="#hikeBreakdown" data-transition="fade">HIKE BREAKDOWN</a>
           </li>
         </ul>
       </div>
@@ -61,8 +62,8 @@
 
 
 
-    <!-- //===========================PAGE SPLIT=================================
-    //================================ADD HIKES============================== -->
+    <!-- //=======================================================================
+    //======================================================================= -->
     <div data-role="page" id="add">
       <!-- header -->
       <div data-role="header" data-theme='b'>
@@ -81,6 +82,9 @@
           <li><a class="unclickable" href="#add" data-transition="fade">ADD MORE HIKES</a>
           </li>
           <li><a href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+            
+          </li>
+          <li><a href="#hikeBreakdown" data-transition="fade">HIKE BREAKDOWN</a>
           </li>
         </ul>
       </div>
@@ -131,8 +135,8 @@
 
 
 
-    <!-- //===========================PAGE SPLIT=================================
-    //================================LIST HIKES============================= -->
+    <!-- //=======================================================================
+    //======================================================================= -->
     <div data-role="page" id="listHikes">
 
       <!-- header -->
@@ -148,9 +152,12 @@
         <ul>
           <li><a href="#home" data-transition="fade">HOME</a>
           </li>
+         
           <li><a href="#add" data-transition="fade">ADD MORE HIKES</a>
           </li>
           <li><a class="unclickable" href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+          </li>
+          <li><a href="#hikeBreakdown" data-transition="fade">HIKE BREAKDOWN</a>
           </li>
         </ul>
       </div>
@@ -171,24 +178,38 @@
       </div>
 
     </div>
-
-    <!-- //===========================PAGE SPLIT=================================
-    //================================DETAILS================================ -->
+    <!-- ========================================================================
+    ====================================end of page==============================
+    ========================================================================= -->
 
     <div data-role="page" id="details">
+      <h2>Details</h2>
+    </div>
+  </div>
+
+  <div data-role="page" id="listHikes">
 
       <!-- header -->
       <div data-role="header" data-theme='b'>
         <br><img src="images/strikethrough.png" alt="An S that has strikethrough on it." width="102" height="102">
         <br>
-        <h1>Detail View</h1>
+        <h1>HIKE BREAKDOWN</h1>
       </div>
 
+  <div data-role="page" id="hikeBreakdown">
+      <!-- header -->
+      <div data-role="header" data-theme='b'>
+        <br><img src="images/strikethrough.png"  width="102" height="102">
+        <br>
+        <h2>HIKE BREAKDOWN</h2>
+      </div>
 
-      <!-- /navbar -->
+      <!-- /navbar -->
       <div data-role="navbar" data-theme='c'>
         <ul>
-          <li><a href="#home" data-transition="fade">HOME</a>
+          <li><a class="unclickable">HIKE BREAKDOWN</a>
+          </li>
+          <li><a href="#home" data-transition="fade"></a>
           </li>
           <li><a href="#add" data-transition="fade">ADD MORE HIKES</a>
           </li>
@@ -196,28 +217,24 @@
           </li>
         </ul>
       </div>
-
-      <!-- content -->
-      <div data-role="content" data-theme='c'>
-        <p>Here are the details for your completed hike:</p>
-        <p id="oneTrailname"></p>
-        <p id="oneWhere"></p>
-        <p id="oneWhen"></p>
-        <p id="oneTOD"></p>
-        <p id="oneNote"></p>
+      <div data-role="content" data-theme='b'>
+        <div>Here are your completed hikes:</div><br>
+        <div class="hikelistcontainer">
+          <ul id="hikeListul" data-role="listview"></ul>
+        </div>
+        <div>Here are the details of each hike:</div><br>
+        <div>Time to complete:</div><br>
+        <div>Average incline:</div><br>
+        <div>Total distance:</div><br>
+          
       </div>
-
-      <!-- notes footer -->
-      <div class="footstyle">
+    <div class="footstyle">
         <div data-role="footer" data-theme='a'>
           <h3>Edwin Pacheco & Matthew Nusbaum &copy; 2023</h3>
         </div>
       </div>
+
     </div>
-    <!-- ========================================================================
-    ====================================end of page==============================
-    ========================================================================= -->
-  </div>
 
 </body>
 
