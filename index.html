@@ -36,7 +36,7 @@
           </li>
           <li><a href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
           </li>
-          <li><a href="#hikeBreakdown" data-transition="fade">HIKE BREAKDOWN</a>
+          <li><a href="#details" data-transition="fade">HIKE BREAKDOWN</a>
           </li>
         </ul>
       </div>
@@ -101,11 +101,10 @@
           <input type="text" value="" id="locationInput">
           <br> Date
           <br>
-          <input type="date" id="dateInput" value="2023-05-01"> How many miles?
-          <br>
-          <input type="text" value="" id="distanceInput">
-          <br>
-
+          <input type="date" id="dateInput" value="2023-05-01">
+          
+          
+          <!-- time of day or TOD-->
           <div>
             <label for="select-TOD">Select Time of Day</label>
             <select name="select-TOD" id="select-TOD">
@@ -115,6 +114,18 @@
               <option value="Night">Night</option>
             </select>
           </div>
+          
+          
+
+          <br> How many miles?
+          <br>
+          <input type="text" value="" id="distanceInput">
+          <br> Peak Elevation (ft.)
+          <br>
+          <input type="text" value="" id="trailElevation">
+          <br> Completion Time (ex. 2:54)
+          <br>
+          <input type="text" value="" id="trailTime">
 
           <p>Additional notes:</p>          
           <input type="text" value="" id="noteInput">
@@ -182,57 +193,65 @@
     ====================================end of page==============================
     ========================================================================= -->
 
-    <div data-role="page" id="details">
-      <h2>Details</h2>
-    </div>
-  </div>
-
-  <div data-role="page" id="listHikes">
-
+    <div data-role="page" id="hikeBreakdown">
       <!-- header -->
       <div data-role="header" data-theme='b'>
         <br><img src="images/strikethrough.png" alt="An S that has strikethrough on it." width="102" height="102">
         <br>
-        <h1>HIKE BREAKDOWN</h1>
+        <h2>Your Hike Breakdown</h2>
       </div>
-
-  <div data-role="page" id="hikeBreakdown">
-      <!-- header -->
-      <div data-role="header" data-theme='b'>
-        <br><img src="images/strikethrough.png"  width="102" height="102">
-        <br>
-        <h2>HIKE BREAKDOWN</h2>
-      </div>
-
+    
+    
+    
       <!-- /navbar -->
       <div data-role="navbar" data-theme='c'>
         <ul>
-          <li><a class="unclickable">HIKE BREAKDOWN</a>
-          </li>
-          <li><a href="#home" data-transition="fade"></a>
+          <li><a href="#home" data-transition="fade">HOME</a>
           </li>
           <li><a href="#add" data-transition="fade">ADD MORE HIKES</a>
           </li>
           <li><a href="#listHikes" data-transition="fade">LIST YOUR HIKES</a>
+    
+          </li>
+          <li><a class="unclickable" href="#hikeBreakdown" data-transition="fade">HIKE BREAKDOWN</a>
           </li>
         </ul>
       </div>
+    
+    
+      <!-- content -->
       <div data-role="content" data-theme='b'>
-        <div>Here are your completed hikes:</div><br>
         <div class="hikelistcontainer">
           <ul id="hikeListul" data-role="listview"></ul>
         </div>
-        <div>Here are the details of each hike:</div><br>
-        <div>Time to complete:</div><br>
-        <div>Average incline:</div><br>
-        <div>Total distance:</div><br>
-          
+        <div>Here are the details for your hike:</div>
+        <br>
+        <div>Trail Name:</div>
+        <br>
+        <div>Location:</div>
+        <br>
+        <div>Date:</div>
+        <br>
+        <div>Time of Day:</div>
+        <br>
+        <div>Total Miles:</div>
+        <br>
+        <div>Peak Elevation (ft.):</div>
+        <br>
+        <div>Completion Time:</div>
+        <br>
+        <div>Additional Notes:</div>
+        <br>
+    
       </div>
-    <div class="footstyle">
+    
+      <!-- notes footer -->
+      <div class="footstyle">
         <div data-role="footer" data-theme='a'>
           <h3>Edwin Pacheco & Matthew Nusbaum &copy; 2023</h3>
         </div>
       </div>
+    </div>
 
     </div>
 
